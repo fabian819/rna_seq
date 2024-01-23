@@ -18,6 +18,6 @@ for i in $FILES; do
     -q 25 \
     --minimum-length 25 \
     --discard-untrimmed \
-    -o "${i}_clpd.fastq.gz" \
+    -o "${i}_clpd_tr.fastq.gz" \
     "${i}.fastq.gz"
 done
