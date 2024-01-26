@@ -24,6 +24,9 @@ names(genelist_up) <- df$GeneID
 genelist_down <- factor(downregulated)
 names(genelist_down) <- df$GeneID
 
+upregulated <- df$GeneID[upregulated==1]
+downregulated <- df$GeneID[downregulated==1]
+
 #Map IDs
 allGO2genes <- annFUN.org(whichOnto = "ALL",
                           feasibleGenes = NULL,
